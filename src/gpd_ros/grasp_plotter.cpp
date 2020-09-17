@@ -75,7 +75,7 @@ visualization_msgs::Marker GraspPlotter::createFingerMarker(const Eigen::Vector3
   marker.pose.position.x = center(0);
   marker.pose.position.y = center(1);
   marker.pose.position.z = center(2);
-  marker.lifetime = ros::Duration(10);
+  marker.lifetime = ros::Duration(120);
 
   // use orientation of hand frame
   Eigen::Quaterniond quat(frame);
@@ -114,7 +114,7 @@ visualization_msgs::Marker GraspPlotter::createHandBaseMarker(const Eigen::Vecto
   marker.pose.position.x = center(0);
   marker.pose.position.y = center(1);
   marker.pose.position.z = center(2);
-  marker.lifetime = ros::Duration(10);
+  marker.lifetime = ros::Duration(120);
 
   // use orientation of hand frame
   Eigen::Quaterniond quat(frame);
